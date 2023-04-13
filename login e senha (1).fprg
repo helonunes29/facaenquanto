@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value="principal"/>
+        <attribute name="authors" value="Prof. Marcio Denadai"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-11 03:43:11 "/>
+        <attribute name="created" value="SW5zdHJ1dG9yZXM7RVNONTEyTjEyNjI4NTY7MjAyMy0wNC0wNjsiMTA6NDM6MDMgIjszMjEx"/>
+        <attribute name="edited" value="SW5zdHJ1dG9yZXM7RVNONTEyTjEyNjI4NTY7MjAyMy0wNC0wNjsiMTI6NDY6MjYgIjsxMDszMzc3"/>
+        <attribute name="edited" value="MjMxNDgwMDM7RVNONTEyTjEyNjI4Mzc7MjAyMy0wNC0xMTsiMDM6NDM6MTEgIjsxOzI1MTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="user" type="String" array="False" size=""/>
+            <declare name="password" type="String" array="False" size=""/>
+            <declare name="recorrente" type="Boolean" array="False" size=""/>
+            <assign variable="recorrente" expression="true"/>
+            <do expression="recorrente==true">
+                <output expression="&quot;Digite o seu nome de usu&#225;rio!&quot;" newline="True"/>
+                <input variable="user"/>
+                <output expression="&quot;Digite sua senha!&quot;" newline="True"/>
+                <input variable="password"/>
+                <if expression="user==&quot;Marcio&quot;">
+                    <then>
+                        <if expression="password==&quot;1234&quot;">
+                            <then>
+                                <if expression="cpf==123">
+                                    <then>
+                                        <output expression="&quot;Voce sera redirecionado ao seu perfil&quot;" newline="True"/>
+                                        <assign variable="recorrente" expression="false"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;usuario ou senha incorretos&quot;" newline="True"/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <output expression="&quot;Usu&#225;rio ou senha inv&#225;lido.&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;Usu&#225;rio ou senha inv&#225;lido.&quot;" newline="True"/>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
